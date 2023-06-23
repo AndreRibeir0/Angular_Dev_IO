@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { ContaAppComponent } from './conta.app.component';
 
 import { ContaRoutingModule } from './conta.route';
+import { ContaService } from './services/conta.service';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ContaRoutingModule } from './conta.route';
     HttpClientModule,
   ],
   providers: [
+    ContaService
   ]
 })
 export class ContaModule { }
